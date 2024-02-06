@@ -1,0 +1,43 @@
+// variables in scss
+
+$mainColor:#c8deff;
+$bg-imgTop:no-repeat top/cover;
+body{
+    background: linear-gradient(#a5aae9cc,#8c9af6);
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background: $mainColor;
+    max-width: 280px;
+    padding: 20px;
+    line-height: 24px;
+    margin: 4rem;
+    position: relative;
+}
+.img{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    border: 5px solid #fff;
+    position: absolute;
+    right: -30px;
+    bottom: 110px;
+}
+.img-one{
+    background: url(https://images.unsplash.com/photo-1633307375906-709ce1b7e9f3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8dG93SlpGc2twR2d8fGVufDB8fHx8fA%3D%3D) $bg-imgTop;
+    
+}
+.img-two{
+    background: url(https://images.unsplash.com/photo-1615354475159-b7a2e2ae6ca3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDd8dG93SlpGc2twR2d8fGVufDB8fHx8fA%3D%3D) $bg-imgTop;
+}
+.img-three{
+    background: url(https://images.unsplash.com/photo-1706373193792-52fc0b8b22e3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDM0fHRvd0paRnNrcEdnfHxlbnwwfHx8fHw%3D) $bg-imgTop;
+}
+.img-four{
+    background: url(https://images.unsplash.com/photo-1545346315-f4c47e3e1b55?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE4fHx8ZW58MHx8fHx8) $bg-imgTop;
+}
