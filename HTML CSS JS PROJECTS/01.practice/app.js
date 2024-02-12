@@ -152,3 +152,41 @@ do {
 // challenge eleven
 console.log("challenge eleven");
 // Q1
+const favSinger = ["sonu nigam", "altaf", "hafiz raza"];
+// Q2
+console.log(favSinger[0]);
+// Q3
+const favNumber = [2, 3, 4, 5];
+// Q4
+const mixedArr = ["string", favNumber, 123, true];
+// Q5
+console.log(mixedArr[0]);
+console.log(mixedArr[1]);
+console.log(mixedArr[1][0]);
+console.log(mixedArr[1][1]);
+console.log(mixedArr[1][2]);
+console.log(mixedArr[1][3]);
+console.log(mixedArr[2]);
+console.log(mixedArr[3]);
+// challenge twelve
+console.log("challenge twelve");
+// Q1
+const car = {
+// Q2
+    type:"maruti",
+    model:"gt23",
+    color:"black"
+};
+// Q3
+console.log(typeof car);
+console.log(car);
+// Q4
+car.type = "toyota";
+console.log(car);
+// Q5
+car.wheels = "rimbs";
+// Q6
+console.log(car);
+// challenge thirteen
+console.log("challenge thirteen");
+// Q1
