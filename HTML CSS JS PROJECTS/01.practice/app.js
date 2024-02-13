@@ -190,3 +190,53 @@ console.log(car);
 // challenge thirteen
 console.log("challenge thirteen");
 // Q1
+function MyFunction(a,b) {
+    return a * b;
+}
+console.log(MyFunction(2,4));
+// challenge fourteen
+console.log("challenge fourteen");
+// Q1
+const showCallFunc = (fn) => {
+    let value = 10;
+    fn(value);
+}
+showCallFunc(function (value) {
+    console.log(value);
+});
+// challenge fifteen
+console.log("challenge fifteen");
+// Q1
+let strings = `the quick
+brown fox
+jumps over
+the lazy dog`;
+console.log(strings);
+// Q2
+let firstName = "Ashu";
+let lastName = "Choudhary";
+// Q3
+console.log(`${firstName} ${lastName}`);
+// challenge sixteen
+console.log("challenge sixteen -> ES6");
+// Q1
+let a = 1, b = 2, c = 3;
+let obj = {
+    a, b, c
+};
+console.log(obj);
+// Q2
+let lib = {
+    sum: (a, b) =>a + b,
+    mult: (a, b) =>a * b,
+}
+console.log(lib.sum(2, 3));
+console.log(lib.mult(2, 3));
+// Q3
+getPersionES6 = (name, age, height) => {
+    return { name, age, height }
+};
+console.log(getPersionES6("ashu", 19, 210));
+// challenge seventeen
+console.log("challenge seventeen -> ES6(default parameter)");
+// Q1
