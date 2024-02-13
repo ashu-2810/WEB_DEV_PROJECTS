@@ -240,3 +240,48 @@ console.log(getPersionES6("ashu", 19, 210));
 // challenge seventeen
 console.log("challenge seventeen -> ES6(default parameter)");
 // Q1
+multiply = (a, b = 1) => a * b;
+console.log(multiply(2));
+// challenge eighteen
+console.log("challenge eighteen -> ES6(spread operator)");
+// Q1
+let arr = [1, 2, 3];
+let arr2 = [4, 5];
+let arr3 = [...arr, ...arr2];
+console.log(arr3);
+// Q2
+let user = {
+    name: "Jen",
+    age: 22
+};
+let clone = {...user};
+console.log(clone);
+// challenge ninteen
+console.log("challenge ninteen -> ES6(rest operator)");
+// Q1
+variadic = (...prams) => {
+    console.log(prams);
+}
+console.log('Huxn','WebDev',19,20,["one","two"]);
+// challenge twenty
+console.log("challenge twenty -> array destructuring");
+// Q1
+const color = ["red", "green", "blue", "yellow", "orange"];
+const [color1, color2, color3] = color;
+console.log(color1, color2, color3);
+// challenge twenty one
+console.log("challenge twenty one -> object destructuring");
+// Q1
+const person = {
+    names: "jhon doe",
+    age: 30,
+    gender: "male",
+    country: "usa"
+};
+const { names, age, country } = person;
+console.log(names, age, country);
+// challenge twenty two
+console.log("challenge twenty two -> object destructuring");
+// Q1
+const { names: personName, age: personAge, country: personCountry } = person;
+console.log(personName, personAge, personCountry);
