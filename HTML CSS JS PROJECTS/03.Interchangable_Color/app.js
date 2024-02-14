@@ -30,5 +30,5 @@ changeBackground = (color) => {
             break;
         default:
         break;
-    }
+    };
 };
