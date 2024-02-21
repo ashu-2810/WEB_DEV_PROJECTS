@@ -285,3 +285,70 @@ console.log("challenge twenty two -> object destructuring");
 // Q1
 const { names: personName, age: personAge, country: personCountry } = person;
 console.log(personName, personAge, personCountry);
+// challenge twenty three
+console.log("challenge twenty three -> using this keyword");
+// Q1
+const persons = {
+    names: "Ashu",
+    age: "22",
+    greetRegular: function () {
+        return `Hello my Name is ${this.names} & I'm ${this.age} year old.`;
+    },
+    greetArrow: () => {
+        return `Hello my Name is ${this.names} & I'm ${this.age} year old.`;
+    },
+};
+console.log(persons.greetRegular());
+console.log(persons.greetArrow());
+// challenge twenty four
+console.log("challenge twenty four -> factory function");
+// Q1
+function vehciles(type,brand,model,year) {
+    return { type, brand, model, year };
+};
+const v1 = vehciles("car", "hundai", "camry", 2020);
+console.log(v1);
+const v2 = vehciles("motercycle", "honda", "passion plus", 2012);
+console.log(v2);
+// challenge twenty five
+console.log("challenge twenty five -> constructor function");
+// Q1
+function people(name, age, gender) {
+    this.name = name;
+    this.age = age;
+    this.gender = gender;
+    this.info = function () {
+        return `my name is ${this.name}, age is ${this.age}, gender is ${this.gender}.`;
+    };
+};
+const people1 = new people("Ashu", 22, "male");
+const people2 = new people("rupesh", 21, "male");
+console.log(people1);
+console.log(people1.info());
+console.log(people2);
+console.log(people2.info());
+// Q2
+function cars(make, model, year, color) {
+    this.make = make;
+    this.model = model;
+    this.year = year;
+    this.color = color;
+    this.start = function () {
+        return `Starting the ${this.make} ${this.model}....`;
+    };
+    this.stop = function () {
+        return `stopping the ${this.make} ${this.model}....`;
+    };
+    this.info = function () {
+        return `make:${this.make} model:${this.model} year:${this.year} color:${this.color}`;
+    }
+};
+const car1 = new cars("Toyota", "camry", 2022, "white");
+const car2 = new cars("honda", "CR-V", 2024, "matt Black");
+console.log(car1.start());
+console.log(car1.info());
+console.log(car1.stop());
+console.log(car2.start());
+console.log(car2.info());
+console.log(car2.stop());
+
