@@ -1,9 +1,9 @@
 import Add from "./Components/Add";
-import Nav from "./Components/nav";
+import Navbar from "./Components/Navbar";
 function App() {
   return (
     <>
-      <Nav/>
+      <Navbar/>
       <Add/>
     </>
   );
