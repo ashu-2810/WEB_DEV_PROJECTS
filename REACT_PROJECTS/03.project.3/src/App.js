@@ -1,10 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
+import Main from './Main'
 
 const App = () => {
   return (
-    <>
-      <h1>Hello</h1>
-    </>
+    <Main/>
   )
 }
 
