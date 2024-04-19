@@ -1,0 +1,160 @@
+/* style 1 starts */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+.container{
+    width: 30rem;
+    height: 30rem;
+    position: relative;
+    overflow: hidden;
+}
+.container .img{
+    width: 100%;
+    transition: all 1s;
+}
+.content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* center text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transition: all 1s;
+    background-color: rgb(23, 23, 23);
+    transform: translateX(-100%);
+    /* only one at a time */
+    /* transform: translateX(100%); */
+    /* transform: translateY(100%); */
+    /* transform: translateY(-100%); */
+}
+.container:hover .content{
+    transform: translateX(0);
+}
+.container:hover .img{
+    transform: translateX(100%);
+    /* transform: translateX(-100%); */
+    /* transform: translateY(100%); */
+    /* transform: translateY(-100%); */
+}
+/* style 1 ends */
+/* style 2 starts */
+.content2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 25%;
+    width: 100%;
+    /* center texts */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: rgb(23, 23, 23);
+    transform: translateY(100%);
+    transition: all 1s;
+}
+.container2:hover .content2{
+    transform: translateY(0);
+}
+.container2 .img2{
+    width: 100%;
+    transition: all 1s;
+}
+.container2:hover .img2{
+    transform: translateY(-25%);
+}
+/* style 2 ends */
+/* style 3 starts */
+.card{
+    position: relative;
+    width: 30rem;
+    height: 30rem;
+    background: #000;
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+.content3 {
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    height: 10px;
+    overflow: hidden;
+    background: crimson;
+    left: 10%;
+    text-align: center;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content3 h3{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 25px;
+    color: #fff;
+}
+.content3 p{
+    width: 80%;
+    margin: 10px auto;
+    font-size: 18px;
+    transition: 0.5s;
+    opacity: 0;
+    line-height: 25px;
+    color: #fff;
+}
+.content3 a{
+    text-decoration: none;
+    background: #000;
+    color: #fff;
+    padding: 10px 15px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: 0.5s;
+    opacity: 0;
+    line-height: 25px;
+    color: #fff;
+}
+.img3{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1s;
+}
+.card:hover .content3{
+    height: 100%;
+    width: 100%;
+    left: 0;
+}
+.card:hover .content3 p , .card:hover .content3 a{
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+.img-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+.card:hover .img3{
+    opacity: 0;
+}
+/* style 3 ends */
