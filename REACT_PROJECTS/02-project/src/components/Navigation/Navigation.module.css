@@ -1,0 +1,25 @@
+
+/* nav bar starts */
+.navigation {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7rem;
+}
+
+.navigation ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 3rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.navigation .logo img {
+    width: 7.5rem;
+}
+
+/* nav bar ends */
