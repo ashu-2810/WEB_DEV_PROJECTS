@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.parallax-1{
+    width: 100vw;
+    height: 80vh;
+    background: url(https://images.pexels.com/photos/16100671/pexels-photo-16100671/free-photo-of-clouds-over-river-meanders.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.parallax-1 h2{
+    position: relative;
+    width: 300px;
+    height: 50px;
+    margin: auto;
+    top: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    color: #fff;
+}
+.para-1{
+    padding: 50px;
+    background: #000;
+    color: #fff;
+    font-size: 17px;
+    text-align: justify;
+}
+.parallax-2{
+    width: 100vw;
+    height: 80vh;
+    background: url(https://images.pexels.com/photos/26794592/pexels-photo-26794592/free-photo-of-tents-in-village-in-countryside.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.parallax-2 h2{
+    position: relative;
+    width: 300px;
+    height: 50px;
+    margin: auto;
+    top: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    color: #fff;
+}
+.para-2{
+    padding: 50px;
+    background: #000;
+    color: #fff;
+    font-size: 17px;
+    text-align: justify;
+}

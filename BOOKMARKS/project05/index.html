@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT-05 - Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Survey Form</h1>
+    <form id="form">
+        <div class="form-control">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your Name">
+        </div>
+        <div class="form-control">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your Email">
+        </div>
+        <div class="form-control">
+            <label for="age">Age</label>
+            <input type="text" id="age" placeholder="Enter your Age">
+        </div>
+        <div class="form-control">
+            <label for="desc">Which option best describes you?</label>
+            <select name="role" id="role">
+                <option value="student">Student</option>
+                <option value="intern">Intern</option>
+                <option value="professional">Professional</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="form-control">
+            <label for="#">Would you recommend GeeksforFeeks to a friend?</label>
+            <label for="rec-1">
+                <input type="radio" name="recommend" id="rec-1">No
+            </label>
+            <label for="rec-2">
+                <input type="radio" name="recommend" id="rec-2">Yes
+            </label>
+            <label for="rec-3">
+                <input type="radio" name="recommend"  id="rec-3">Maybe
+            </label>
+        </div>
+        <div class="form-control">
+            <label for="#">Languages and Frameworks known <small>(Check all that apply)</small></label>
+            <label for="inp-1">
+                <input type="checkbox" name="inp" id="inp-1">C
+            </label>
+            <label for="inp-2">
+                <input type="checkbox" name="inp" id="inp-2">C++
+            </label>
+            <label for="inp-3">
+                <input type="checkbox" name="inp" id="inp-3">C#
+            </label>
+            <label for="inp-4">
+                <input type="checkbox" name="inp" id="inp-4">Java
+            </label>
+            <label for="inp-5">
+                <input type="checkbox" name="inp" id="inp-5">Python
+            </label>
+            <label for="inp-6">
+                <input type="checkbox" name="inp" id="inp-6">Javascript
+            </label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp" id="inp-7">React
+            </label>
+            <label for="inp-8">
+                <input type="checkbox" name="inp" id="inp-8">Angular
+            </label>
+            <label for="inp-9">
+                <input type="checkbox" name="inp" id="inp-9">Django
+            </label>
+            <label for="inp-10">
+                <input type="checkbox" name="inp" id="inp-10">Spring
+            </label>
+        </div>
+        <div class="form-control">
+            <label for="comment">Any Comments or Suggestions</label>
+            <textarea name="comment" id="comment" placeholder="Enter your comment"></textarea>
+        </div>
+        <button type="submit" value="submit">Submit</button>
+    </form>
+</body>
+</html>
